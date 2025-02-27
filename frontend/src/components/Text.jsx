@@ -1,7 +1,9 @@
 
-function Text() {
+function Text({ txtContent, txtStyles}) {
   return (
-    <div>Text</div>
+    <h5 className={`font-primary ${txtStyles}`}>
+      {txtContent}
+    </h5>
   )
 }
 
