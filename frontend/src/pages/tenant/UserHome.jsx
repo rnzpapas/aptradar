@@ -2,6 +2,7 @@ import Footer from "@/layouts/Footer";
 import UserNav from "@/layouts/navbars/UserNav";
 import BgImage from '@/assets/hero.jpg';
 import Text from "@/components/Text";
+import SelectField from "@/components/SelectField";
 
 function UserHome() {
   return (
@@ -18,6 +19,10 @@ function UserHome() {
         </section>
         <section className={"h-dvh"}>
           <section className="">
+            <SelectField  
+              selectLabel="Property Type"
+              choices={['House', 'Condominium']}
+            />
           </section>
         </section>
         <Footer />

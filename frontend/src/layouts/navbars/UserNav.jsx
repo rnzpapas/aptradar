@@ -75,7 +75,16 @@ function UserNav({ activeLink = 0 }) {
         <section className="w-[20%] z-20 cursor-pointer">
           <div
             onClick={toggleMobileNav}
-            className="w-[32px] h-[5px] bg-black text-5xl rounded-sm before:absolute before:translate-y-2 before:rounded-sm before:bg-black before:w-[22px] before:h-[5px] after:absolute after:-translate-y-2 after:rounded-sm after:bg-black after:w-[22px] after:h-[5px]"
+            className={`relative h-[5px] bg-black rounded-sm transition-all ease-in-out duration-[300ms]
+            before:absolute before:content-[''] before:transition-all before:ease-in-out before:duration-[300ms] 
+            before:translate-y-2 before:rounded-sm before:bg-black before:w-[22px] before:h-[5px] 
+            after:absolute after:content-[''] after:transition-all after:ease-in-out after:duration-[300ms] 
+            after:-translate-y-2 after:rounded-sm after:bg-black after:w-[22px] after:h-[5px] 
+            ${
+              isMobileNavOpen
+                ? 'w-0 before:w-[32px] after:w-[32px] before:rotate-45 after:-rotate-45 before:-translate-y-2 after:translate-y-2'
+                : 'w-[32px] before:rotate-0 after:rotate-0 before:w-[22px] after:w-[22px]'
+            }`}
           ></div>
         </section>
 
