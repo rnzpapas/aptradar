@@ -96,12 +96,12 @@ function UserNav({ activeLink = 0 }) {
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-[18px] h-[18px] fill-black">
                     <path d="M224 0c-17.7 0-32 14.3-32 32l0 19.2C119 66 64 130.6 64 208l0 18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416l384 0c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8l0-18.8c0-77.4-55-142-128-156.8L256 32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3l-64 0-64 0c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z" />
                   </svg>
-                  <span className={`absolute top-2.5 -right-0.5 bg-red-600 text-white rounded-full w-[8px] h-[8px] ${isThereUnreadNotifications ? "flex" : "hidden"} items-center justify-center`}></span>
+                  <span className={`absolute top-1.5 xl:top-2 right-0 bg-red-600 text-white rounded-full w-[8px] h-[8px] ${isThereUnreadNotifications ? "flex" : "hidden"} items-center justify-center`}></span>
                 </div>
               </section>
 
               {/* Profile */}
-              <section className="rounded-full w-[42px] h-[42px] overflow-hidden cursor-pointer" onClick={toggleProfile}>
+              <section className="rounded-full w-[32px] h-[32px] xl:w-[42px] xl:h-[42px] overflow-hidden cursor-pointer" onClick={toggleProfile}>
                 <img src={ProfilePic} className="w-full h-auto aspect-square" />
               </section>
             </section>
@@ -178,7 +178,7 @@ function UserNav({ activeLink = 0 }) {
             <section className='p-2 flex items-center justify-center border-b-2 border-b-gray'>
               <Text txtContent={"Rami Al-Mansouri"} txtStyles={'text-sm font-semibold'}/>
             </section>
-            <section className='relative p-2 h-[90%]'>
+            <section className='relative pl-2 h-[90%]'>
               <ul>
                 <li> 
                   <Link>               
@@ -188,7 +188,7 @@ function UserNav({ activeLink = 0 }) {
                 <li>                
                   <Button 
                   txtContent={"Sign Out"} 
-                  btnStyles={"font-medium w-[95%] absolute bottom-0 lg:bottom-8"}
+                  btnStyles={"font-medium w-[90%] md:w-[93%] lg:w-[95%] absolute bottom-8"}
                   isActive={true}
                   />
                 </li>
