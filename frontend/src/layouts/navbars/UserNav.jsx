@@ -44,7 +44,7 @@ function UserNav({ activeLink = 0 }) {
   }, [isMobileNavOpen]);
 
   return (
-    <section className="relative"> 
+    <section className="relative bg-white z-20"> 
       {/* Mobile Links */}
       <section
         className={`absolute top-0 left-0 bg-black/50 z-10 w-screen h-screen ${
@@ -101,7 +101,7 @@ function UserNav({ activeLink = 0 }) {
               </section>
 
               {/* Profile */}
-              <section className="rounded-full w-[42px] h-[42px] overflow-hidden" onClick={toggleProfile}>
+              <section className="rounded-full w-[42px] h-[42px] overflow-hidden cursor-pointer" onClick={toggleProfile}>
                 <img src={ProfilePic} className="w-full h-auto aspect-square" />
               </section>
             </section>
@@ -182,13 +182,13 @@ function UserNav({ activeLink = 0 }) {
               <ul>
                 <li> 
                   <Link>               
-                    <Text txtContent={"Profile"} txtStyles={'hover:underlined'}/>
+                    <Text txtContent={"Profile"} txtStyles={'hover:underline'}/>
                   </Link>
                 </li>
                 <li>                
                   <Button 
                   txtContent={"Sign Out"} 
-                  btnStyles={"font-medium w-[95%] absolute bottom-0"}
+                  btnStyles={"font-medium w-[95%] absolute bottom-0 lg:bottom-8"}
                   isActive={true}
                   />
                 </li>
