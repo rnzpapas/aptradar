@@ -3,6 +3,9 @@ import UserNav from "@/layouts/navbars/UserNav";
 import BgImage from '@/assets/hero.jpg';
 import Text from "@/components/Text";
 import SelectField from "@/components/SelectField";
+import SearchFilters from "@/components/SearchFilters";
+import propertyTypes from "@/data/properties.json";
+import baranggayList from "@/data/baranggay.json";
 
 function UserHome() {
   return (
@@ -18,11 +21,22 @@ function UserHome() {
             </section>
         </section>
         <section className={"h-dvh"}>
-          <section className="">
-            <SelectField  
-              selectLabel="Property Type"
-              choices={['House', 'Condominium']}
-            />
+          <section className="p-4 flex items-center justify-between">
+            <section className="grid grid-cols-2 gap-2">
+              <SelectField  
+                selectLabel="Baranggay"
+                selectPlaceholder="Where?"
+                choices={baranggayList}
+                required={true}
+              />
+              <SelectField  
+                selectLabel="Property Type"
+                selectPlaceholder="What?"
+                choices={propertyTypes}
+                required={true}
+              />
+            </section>
+            <SearchFilters />
           </section>
         </section>
         <Footer />
