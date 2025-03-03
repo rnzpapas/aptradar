@@ -3,7 +3,7 @@ import UserNav from "@/layouts/navbars/UserNav";
 import BgImage from '@/assets/hero.jpg';
 import Text from "@/components/Text";
 import SelectField from "@/components/SelectField";
-import SearchFilters from "@/components/SearchFilters";
+import SearchFilters from "@/layouts/SearchFilters";
 import propertyTypes from "@/data/properties.json";
 import baranggayList from "@/data/baranggay.json";
 

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className="h-[280px] w-full bg-blue flex items-center relative mt-36">
+    <footer className="h-[280px] w-full bg-blue flex items-center relative mt-64">
         {/* Logo */}
         <section className='w-[30%]'>
             <img src={Logo} alt="logo" className='w-[160px] md:w-[180px] lg:w-[200px] xl:w-[220px]'/>
