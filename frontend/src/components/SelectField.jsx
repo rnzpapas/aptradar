@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function SelectField({selectLabel = "", selectPlaceholder = "", choices = [], required = false}) {
+function SelectField({selectLabel = "", selectPlaceholder = "", choices = [], required = false, onSubmitFunc}) {
   const [inputValue, setInputValue] = useState("");
   const [options, setOptions] = useState(choices);
   const [isOptionsDpOpen, setIsOptionsDpOpen] = useState(false);
@@ -26,6 +26,10 @@ function SelectField({selectLabel = "", selectPlaceholder = "", choices = [], re
   const onOptionClick = (value) => {
     setInputValue(value);
     setIsOptionsDpOpen(false);
+  }
+
+  const submitField = () => {
+    
   }
 
   return (

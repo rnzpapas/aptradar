@@ -1,0 +1,101 @@
+[
+    {
+        "id": "APT100000",
+        "title": "Modern Loft-Style 2-Bedroom Apartment",
+        "pricing": 12000,
+        "rating": "3",
+        "reviewsCount": 2,
+        "bedroomCount": 2,
+        "bathRoomCount": 1,
+        "parkingCount": 1,
+        "img": "house.jpg"
+    },
+    {
+        "id": "APT100001",
+        "title": "Spacious 3-Bedroom Condo with City View",
+        "pricing": 15000,
+        "rating": "4",
+        "reviewsCount": 5,
+        "bedroomCount": 3,
+        "bathRoomCount": 2,
+        "parkingCount": 2,
+        "img": "house.jpg"
+    },
+    {
+        "id": "APT100002",
+        "title": "Cozy 1-Bedroom Apartment in Downtown",
+        "pricing": 9000,
+        "rating": "4.5",
+        "reviewsCount": 8,
+        "bedroomCount": 1,
+        "bathRoomCount": 1,
+        "parkingCount": 0,
+        "img": "house.jpg"
+    },
+    {
+        "id": "APT100003",
+        "title": "Luxury 4-Bedroom Penthouse with Private Pool",
+        "pricing": 25000,
+        "rating": "5",
+        "reviewsCount": 15,
+        "bedroomCount": 4,
+        "bathRoomCount": 3,
+        "parkingCount": 2,
+        "img": "house.jpg"
+    },
+    {
+        "id": "APT100004",
+        "title": "Compact Studio Apartment near Subway",
+        "pricing": 7500,
+        "rating": "3.5",
+        "reviewsCount": 4,
+        "bedroomCount": 1,
+        "bathRoomCount": 1,
+        "parkingCount": 0,
+        "img": "house.jpg"
+    },
+    {
+        "id": "APT100005",
+        "title": "Family-Friendly 3-Bedroom House with Garden",
+        "pricing": 13000,
+        "rating": "4.2",
+        "reviewsCount": 7,
+        "bedroomCount": 3,
+        "bathRoomCount": 2,
+        "parkingCount": 1,
+        "img": "house.jpg"
+    },
+    {
+        "id": "APT100006",
+        "title": "Minimalist 2-Bedroom Apartment with Balcony",
+        "pricing": 11000,
+        "rating": "4",
+        "reviewsCount": 3,
+        "bedroomCount": 2,
+        "bathRoomCount": 1,
+        "parkingCount": 1,
+        "img": "house.jpg"
+    },
+    {
+        "id": "APT100007",
+        "title": "Beachfront 1-Bedroom Apartment with Ocean View",
+        "pricing": 14000,
+        "rating": "4.7",
+        "reviewsCount": 10,
+        "bedroomCount": 1,
+        "bathRoomCount": 1,
+        "parkingCount": 1,
+        "img": "house.jpg"
+    },
+    {
+        "id": "APT100008",
+        "title": "Industrial-Style 2-Bedroom Loft with High Ceilings",
+        "pricing": 12500,
+        "rating": "4.3",
+        "reviewsCount": 6,
+        "bedroomCount": 2,
+        "bathRoomCount": 2,
+        "parkingCount": 1,
+        "img": "house.jpg"
+    }
+]

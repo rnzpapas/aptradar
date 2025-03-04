@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Footer from "@/layouts/Footer";
 import UserNav from "@/layouts/navbars/UserNav";
 import BgImage from '@/assets/hero.jpg';
@@ -6,8 +7,11 @@ import SelectField from "@/components/SelectField";
 import SearchFilters from "@/layouts/SearchFilters";
 import propertyTypes from "@/data/properties.json";
 import baranggayList from "@/data/baranggay.json";
+import SampleListings from "@/data/samplecardata.json";
+import ApartmentCards from "@/layouts/ApartmentCards";
 
 function UserHome() {
+  const [listings, setListings] = useState();
   return (
     <section className="overflow-hidden">
         <UserNav activeLink={0}/>
@@ -20,7 +24,7 @@ function UserHome() {
               <Text txtContent={"Find Comfort, Find Home, Find Your Future."} txtStyles={"text-white text-sm md:text-md lg:text-lg xl:text-xl"}/>
             </section>
         </section>
-        <section className={"h-dvh"}>
+        <section className={"h-full"}>
           <section className="p-4 flex items-center justify-between">
             <section className="grid grid-cols-2 gap-2">
               <SelectField  
@@ -28,6 +32,7 @@ function UserHome() {
                 selectPlaceholder="Where?"
                 choices={baranggayList}
                 required={true}
+              
               />
               <SelectField  
                 selectLabel="Property Type"
@@ -37,6 +42,22 @@ function UserHome() {
               />
             </section>
             <SearchFilters />
+          </section>
+          <section className="grid grid-cols-3 gap-2 p-5 max-h-full overflow-y-auto">
+            {
+              SampleListings.map((listing) => (
+                <ApartmentCards 
+                cardId={listing.id} 
+                cardImg={listing.img} 
+                cardTitle={listing.title} 
+                cardPrice={listing.pricing.toLocaleString()}
+                cardRating={listing.rating}
+                bedroomCount={listing.bedroomCount}
+                bathRoomCount={listing.bathroomCount}
+                parkingCount={listing.parkingCount}
+                />
+              ))
+            }
           </section>
         </section>
         <Footer />
